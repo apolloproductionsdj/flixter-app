@@ -42,17 +42,21 @@
         </div>
       </nav>
 
-      <p class="alert alert-info"><%= notice %></p>
-      <p class="alert alert-danger"><%= alert %></p>
+      <% if notice.present? %>
+        <p class="alert alert-info"><%= notice %></p>
+      <% end %>
+      <% if alert.present? %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
 
       <%= yield %>
     </div>
 
     <div id="footer">
       <div class="container">
-        <b>Footer Here</b>
+        <b>Teachers</b>
         <br />
-        <%= link_to 'Link', '#' %>
+        <%= link_to 'Teach A Course', new_instructor_course_path %>
       </div>
     </div>
   </body>
