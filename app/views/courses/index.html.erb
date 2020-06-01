@@ -17,9 +17,9 @@
         <%= link_to 'More Details...', course_path(course), class: 'btn btn-primary btn-large' %>
       </div>
     </div>
-       <% if course.image_url %>
-    <%= image_tag course.image_url, class: 'img-fluid' %>
- <% end %>
+    <% if course.image_url %>
+      <%= image_tag course.image_url, class: 'img-fluid' %>
+    <% end %>
     <br class="clr" />
   <% end %>
 </div>
